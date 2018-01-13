@@ -3,8 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Intro to Vue</title>
+  	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
-  
+  	<div id="app">{{message}}</div>
+  	<script>
+  		var app = new Vue({
+		  el: '#app',
+		  data: {
+		    message: 'Intro to Vue'
+		  }
+		})
+  	</script>
   </body>
 </html>
